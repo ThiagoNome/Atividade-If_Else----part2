@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo 9</title>
+</head>
+<body>
+    <h>Modelo 9</h>
+    <p>Primpeiro número digitado: <span id="d_num1"></span></p>
+    <p>Segundo número digitado: <span id="d_num2"></span></p>
+    <div id="resultado"></div>
+
+    <script>
+        let num1 = Number (prompt("Digite o primeiro número."));
+        let num2 = Number (prompt("Digite o segundo número."))
+        let resul;
+
+        if (num1 > num2){
+            resul = ("A diferença entre os números é/são " + (num1 - num2))
+        }else if (num1 < num2){
+            resul = ("A diferença entre os números é/são " + (num2 - num1))
+        }else {
+            resul = "Os dois números são iguais."
+        }
+
+        document.getElementById("d_num1").innerHTML=num1;
+        document.getElementById("d_num2").innerHTML=num2;
+        document.getElementById("resultado").innerHTML=resul;
+    </script>
+
+
+</body>
+</html>
